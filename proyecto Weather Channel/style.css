@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background: #0a1f44;
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 0.02em;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    font-size: 2rem;
+    height: 40px;
+    padding: 5px 5px 10px;
+    border-bottom: 1px solid;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 15px 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background: #ff1e42;
+}
+  
+button:hover {
+    background: #c3112d;
+}
+
+.container {
+    background-color: white;
+    color: #1e2432;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    margin-left: 50px;
+    visibility : hidden;
+    margin: 50px auto;
+}
+
+.ciudades {
+    padding: 40px 10%; 
+}
+
+#ciudad {
+    font-size: 2rem;
+    color: #717681;
+}
+
+#temperatura {
+    font-size: 4rem;
+    font-weight: bold;
+    vertical-align:top;
+}
+
+sup {
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+img {
+    width: 4rem;
+}
+
+#descripcion {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #717681;
+}
+
+
+
+.encabezado {
+    text-align: center;
+}
+
+.error {
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    width: 350px;
+    height: 40px;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 5px;
+    line-height: 30px;
+    animation: slide-up 1s ease;
+}
+
+@keyframes slide-up {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .encabezado {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+    
+    input {
+        font-size: 1rem;
+        height: 30px;
+        padding: 2px 2px 4px;
+        border-bottom: 1px solid;
+        display: inline;
+    }
+
+    button{
+        font-size: 0.4em;
+    }
+
+    .error{
+        font-size: 0.4em;
+        width: 250px;
+    }
+
+}
+
+
+
